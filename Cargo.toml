@@ -15,7 +15,8 @@ travis-ci = { repository = "maciejkula/wyrm", branch = "master" }
 fast-math = []
 
 [dependencies]
-ndarray = { version = "0.11.0", features = ["serde-1"] }
+#ndarray = { version = "0.11.0", features = ["serde-1"] }
+ndarray = { version = "0.12.0", features = ["serde-1"] }
 rand = { version = "0.5.0", features = ["serde1"] }
 smallvec = { version = "0.5.0", features = ["serde"] }
 itertools = "0.7.3"
@@ -25,9 +26,9 @@ serde_derive = "1.0.0"
 hibitset = "0.5.0"
 
 [dev-dependencies]
-ndarray = { version = "0.11.0", features = ["blas", "serde-1"] }
-blas-src = { version = "0.1.2", default-features = false, features = ["openblas"] }
-openblas-src = { version = "0.5.6", default-features = false, features = ["static"] }
+ndarray = { version = "0.12.0", features = ["blas", "serde-1"] }
+blas-src = { version = "0.2.1", default-features = false, features = ["openblas"] }
+openblas-src = { version = "0.6.1", default-features = false, features = ["static"] }
 criterion = "0.2.3"
 
 [[bench]]
